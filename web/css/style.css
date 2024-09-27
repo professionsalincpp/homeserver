@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #123;
+    align-items: center;
+    color: white;
+    padding: 0px;
+}
+
+.main-heading {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.main-heading h1 {
+    font-size: 50px;
+}
+
+.main-heading p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #0b1622;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.header img {
+    width: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+
+.book-button {
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .header a.logo {
+        display: none;
+    }
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    max-width: 600px;
+    height: 60vh;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    max-width: 600px;
+    height: 60vh;
+}
+
+#login-button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #123;
+    border-color: white;
+    margin-right: 30px;
+    border: 0;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+}
+
+#signup-button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #123;
+    border-color: white;
+    margin-right: 30px;
+    border: 0;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    #login-form {
+        padding: 10px;
+        margin: auto;
+        max-width: 400px;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+    margin: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #123;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #123;
+    transition: 0.5s ease;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    transform: translateX(7px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: white;
+}
+
+
+
+/* button:hover {
+    background-color: #234;
+    background-image: radial-gradient(circle, transparent, 1%, #234 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+button:active {
+    transition: background 0s;
+    background-color: #345;
+    background-position: center;
+    background-size: 100%;
+} */
+
+.ripple {
+    background-position: center;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 4px #999;
+    padding: 12px 18px;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background-color: #234;
+    background-image: radial-gradient(circle, transparent, 1%, #234 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+.ripple:active {
+    transition: background 0s;
+    background-color: #345;
+    background-position: center;
+    background-size: 100%;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+th {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #123;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+td {
+    text-align: left;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #123;
+    border-bottom: 1px solid #eee;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #123;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #123;
+}
+
+input:disabled + .slider {
+    background-color: #555;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#profile-container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 900px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+
+@media screen and (max-width: 600px) {
+    #profile-container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #profile-container {
+        max-width: 300px;
+    }    
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    margin-left: auto;
+    background-image: url("/web/assets/test1.png");
+    background-size: cover;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.property {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #123;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+div#channels-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    width: 100vw;
+    margin-top: 10px;
+    border-radius: 5px;
+    max-width: 1000px;
+}
+
+div.channel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0px;
+    width: 100%;
+    border: 2px solid #123;
+}
+
+@media screen and (max-width: 1000px) {
+    div#channels-list {
+        max-width: 100vw;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+h1.channel-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #123;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+div.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 30px 10px;
+    max-width: 800px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+h1.chart-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #123;
+    text-align: left;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    margin-top: 30px;
+}
+
+ul h1 {
+    font-size: 1.2em;
+    background-color: #123;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+ul h2 {
+    font-size: 1em;
+    background-color: #123;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #123;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    vertical-align: middle;
+}
+
+ul li a {
+    text-transform: capitalize;
+    color: #123;
+}
+
+ul li::before {
+    color: #123;
+    content: "";
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 10px;
+    height: 11px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+    text-align: center;
+    transform: translate(0, -1px);
+    transition: background-color 0.2s ease;
+}
+
+ul li:hover:before {
+    cursor: pointer;
+    background-color: #123;
+}
+
+.tab-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .tab-view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin-top: 0px;
+    }
+    
+}
+
+.tabs-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+    background-color: #123;
+}
+
+.tab-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #ffffff;
+    border: none;
+    background-color: #123;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    border-radius: 0px;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #123;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.8);
+    outline: none;
+    color: white;
+    background-position: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 18px;
+    transition: background 0.8s;
+    border: 0;
+    padding: 12px 24px;
+    min-height: 48px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+button:hover {
+    background: #234;
+}
+
+  
+  
+  /* Ripple effect styles */
+  
+.ripple-span {
+    padding: 1px;
+    background: white;
+    border-radius: 100%;
+    opacity: 0.3;
+    position: absolute;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    will-change: transform;
+}
+  
+.ripple-span.run {
+    opacity: 0;
+    transform: scale(200);
+}
+  
+[ripple] {
+    position: relative;
+    overflow: hidden;
+}
+  
+  
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
